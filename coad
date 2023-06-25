@@ -1,0 +1,45 @@
+Q1. What is the syntax for adding an element to a list in Python?
+- The syntax for adding an element to a list in Python is by using the `append()` method or the `+` operator.
+
+Using `append()` method:
+```python
+my_list.append(element)
+```
+
+Using `+` operator:
+```python
+my_list = my_list + [element]
+```
+or
+```python
+my_list += [element]
+```
+
+Q2. What is the difference between remove() and pop() functions in Python?
+- The `remove()` function is used to remove the first occurrence of a specified element from a list. It takes the value of the element as an argument and removes it from the list. If the element is not found in the list, it raises a `ValueError`.
+
+- The `pop()` function is used to remove and return an element from a specific position (index) in a list. It takes the index of the element as an argument and removes it from the list, returning the removed element. If the index is not specified, it removes and returns the last element in the list.
+
+Q3. Write a Python code to sort a list in descending order.
+```python
+my_list = [5, 2, 8, 1, 9]
+my_list.sort(reverse=True)
+print(my_list)
+```
+
+Q4. Write a Python code to count the number of occurrences of an element in a list.
+```python
+my_list = [1, 2, 3, 2, 1, 4, 2, 5]
+element = 2
+count = my_list.count(element)
+print(count)
+```
+
+Q5. Write a Python code to reverse a list.
+```python
+my_list = [1, 2, 3, 4, 5]
+reversed_list = my_list[::-1]
+print(reversed_list)
+```
+
+Note: In the above code examples, you can modify the values of `my_list`, `element`, and other variables as per your requirement.
